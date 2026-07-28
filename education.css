@@ -1,0 +1,119 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    background: #020024;
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgb(42, 42, 164) 35%, rgb(7, 190, 227) 100%);
+    font-family:sans-serif;
+}
+.header{
+background: #020024;
+background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+.navbar{
+height: 100%;
+display: grid;
+grid-template-columns: 400px 1fr;
+}
+.link1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.link2{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+
+}
+.nav{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition:color 0.2s ease-in 0.1s;
+    transition:transform 0.2s ease-in 0.1s;
+}
+.nav:hover{
+    color: rgb(113, 191, 239);
+    transform: scale(1.1);
+}
+.logo{
+    text-decoration: none;
+    font-size: 45px;
+    font-weight: bolder;
+    transition:transform 0.2s ease-in 0.1s;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.name1{
+    color: white;
+}
+.name2{
+    color:rgb(14, 141, 220) ;
+}
+.name{
+    font-size: 25px;
+}
+.main{
+    display: grid;
+    grid-template-rows: 100px 1fr;
+}
+.heading{
+    text-align: center;
+}
+
+.capline{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.aline{
+    width: 100px;
+    height: 1px;
+    background:radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    margin-top:20px;
+   
+
+}
+.cap{
+    font-size: 50px;
+}
+.line{
+    width: 100px;
+    height: 1px;
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    margin: 15px auto;
+    
+}
+
+.education{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.edu_box{
+    width: 600px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 40px  100px 40px 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    color: black;
+    font-size: 18px;
+    background-color: rgb(22, 138, 201);
+}
+#col_name{
+    display: grid;
+    grid-column: span 4;
+}
+
+
+
+body{
+    margin: 0;
+}
