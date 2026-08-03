@@ -141,32 +141,6 @@ align-items: center;
     
 
 }
-.foot{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.arrow{
-    font-size: 30px;
-    text-decoration: none;
-    color:rgb(3, 133, 214);
-    display: inline-block;
-    animation: moveLeft 1.5s ease-in 0.1s infinite normal;
-}
-@keyframes moveLeft{
-    0%{
-        color: rgb(3, 133, 214);
-        transform: translate(0);
-    }
-    50%{
-        color:  rgba(9, 9, 121, 1);
-    }
-    100%{
-        color: rgb(37, 175, 202) ;
-        transform: translate(30px);
-    }
-}
 
 h2{
     color: white;
