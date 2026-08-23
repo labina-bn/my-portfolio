@@ -95,39 +95,357 @@ align-items: center;
     background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
     margin-top: 10px;
 }
-
-.education{
-    display: grid;
-    grid-template-columns: 500px 1fr;
-    justify-items: center;
-    align-items: center; 
+#theme-toggle{
+    color: white;
+    font-size: 20px;
 }
-.edu_box{
-    width: 600px;
-    height: 300px;
+#theme-toggle:hover{
+    color: #FFD700;
+}
+
+.light-theme #theme-toggle {
+    color: #0f172a;
+}
+.light-theme #theme-toggle:hover {
+    color: #0284c7;
+}
+.light-theme {
+    background-color: #f1f5f9;
+    color: #0f172a;
+}
+
+.light-theme .container {
+    background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 45%, #eef2f7 100%);
+    color: #0f172a;
+}
+
+.light-theme .header {
+    background: #ffffff;
+    border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+    box-shadow: 0 8px 24px rgba(2, 6, 23, 0.06);
+
+}
+
+.light-theme .nav {
+    color: #0f172a;
+    background: transparent;
+}
+
+.light-theme .nav:hover {
+    color: #0369a1;
+}
+
+.light-theme .name1 {
+    color: #0f172a;
+}
+
+.light-theme .name2 {
+    color: #0ea5e9;
+}
+
+.light-theme .main {
+    background: #ffffff;
+    box-shadow: 0 12px 30px rgba(2, 6, 23, 0.06);
+    border-radius: 16px;
+    padding: 28px;
+    margin: 0;
+}
+
+
+
+.light-theme .line {
+    background: linear-gradient(90deg, #bfdbfe 0%, #60a5fa 50%, #0369a1 100%);
+}
+
+/* Improved spacing and contrast in light mode */
+.light-theme .heading {
+    padding: 20px 12px 12px 12px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.light-theme .heading h1 {
+    margin: 6px 0 6px 0;
+    font-size: 42px;
+    color: #0f172a;
+    letter-spacing: 0.8px;
+}
+
+.light-theme .heading .para {
+    margin: 0 0 10px 0;
+    color: #475569;
+    font-size: 18px;
+}
+
+/* Make the education box lighter and better padded in light mode */
+.light-theme .edu_box {
+    background:#e0e7ff;
+    color: white;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.18);
+    border: none;
+    border-radius: 22px;
+    padding: clamp(18px, 2vw, 30px);
+    width: min(100%, 620px);
+    height: auto;
+    font-size: clamp(16px, 1.5vw, 20px);
+}
+
+.light-theme .edu_box h2,
+.light-theme #col_name,
+.light-theme .info-label,
+.light-theme .info-value,
+.light-theme .info-separator,
+.light-theme .info-icon {
+    color: black;
+}
+
+.light-theme .ed_img img {
+    max-width: 480px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(2,6,23,0.04);
+}
+
+.light-theme .education {
+    gap: 36px;
+    padding: 16px;
+}
+
+
+.education {
     display: grid;
-    grid-template-columns: 40px  100px 40px 1fr;
-    grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: minmax(260px, 440px) minmax(280px, 1fr);
     justify-items: center;
     align-items: center;
-    color: white;
-    font-size: 18px;
-    border-radius: 20px;
-    background: radial-gradient(circle, rgb(6, 4, 79) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
-}
-img{
-    width:450px;
-    height:auto;
-}
-#col_name{
-    display: grid;
-    grid-column: span 4;
+    gap: clamp(22px, 3vw, 42px);
+    padding: 20px;
 }
 
-h1,p{
+.ed_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.edu_box {
+    width: min(100%, 620px);
+    display: grid;
+    gap: 18px;
+    align-items: center;
+    color: white;
+    font-size: clamp(16px, 1.5vw, 20px);
+    border-radius: 22px;
+    padding: clamp(18px, 2vw, 30px);
+    background: radial-gradient(circle, rgb(6, 4, 79) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.18);
+}
+
+.info-row {
+    display: grid;
+    grid-template-columns: 32px minmax(90px, 120px) 12px 1fr;
+    align-items: center;
+    gap: 10px;
+    word-break: break-word;
+}
+
+.info-icon {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.info-label {
+    font-weight: 600;
+}
+
+.info-separator {
+    text-align: center;
+    opacity: 0.9;
+}
+
+.info-value {
+    line-height: 1.5;
+}
+
+img {
+    width: min(100%, 450px);
+    height: auto;
+    display: block;
+}
+
+#col_name {
+    display: block;
+    text-align: center;
+    margin: 0 0 10px;
+    line-height: 1.4;
+    font-size: clamp(24px, 2vw, 32px);
+}
+
+.hline {
+    display: none;
+}
+
+h1,p {
     margin: 0;
     color: white;
 }
-body{
+
+body {
     margin: 0;
+}
+
+@media (max-width: 900px) {
+    .container {
+        height: auto;
+        min-height: 100vh;
+        grid-template-rows: auto 1fr;
+    }
+
+    .header {
+        height: auto;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 12px;
+        padding: 16px 12px;
+    }
+
+    .link1,
+    .link2 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px 18px;
+    }
+
+    .main {
+        display: block;
+        padding: 10px 12px 30px;
+    }
+
+    .heading {
+        padding: 8px 0;
+        text-align: center;
+    }
+
+    .education {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .edu_box {
+        width: min(100%, 620px);
+        padding: 20px 18px;
+    }
+
+    .capline {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    img {
+        width: min(100%, 480px);
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 560px) {
+    .navbar {
+        padding: 12px 10px;
+    }
+
+    .link1,
+    .link2 {
+        gap: 8px 12px;
+    }
+
+    .nav {
+        font-size: 16px;
+    }
+
+    .logo {
+        font-size: 32px;
+    }
+
+    .name {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p,
+    ul {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .education {
+        grid-template-columns: 1fr;
+        padding: 8px;
+        gap: 16px;
+    }
+
+    .edu_box {
+        width: 100%;
+        padding: 18px 14px;
+        font-size: 16px;
+    }
+
+    .info-row {
+        grid-template-columns: 28px 1fr;
+        grid-template-areas:
+            "icon label"
+            "icon value";
+        gap: 6px 10px;
+    }
+
+    .info-icon {
+        grid-area: icon;
+    }
+
+    .info-label {
+        grid-area: label;
+    }
+
+    .info-separator {
+        display: none;
+    }
+
+    .info-value {
+        grid-area: value;
+        margin-left: 0;
+    }
+
+    .cap {
+        font-size: 36px;
+    }
+
+    img {
+        width: min(100%, 300px);
+    }
+
+    .hline {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .aline {
+        width: 60px;
+    }
 }

@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Projects</title>
+        <link rel="stylesheet" href="projects.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <nav class="navbar">
+                    <div class="link1">
+                        <a href="index.html" class="logo"><span class="name1">L</span><span class="name2">B</span></a>
+                        <a href="index.html" class="nav name" >Labina B N</a>
+                        
+                    </div>
+                    <div class="link2">
+                        <a href="index.html" class="nav home">Home</a>
+                        <a href="about.html" class="nav">About</a>
+                        <a href="skills.html" class="nav">Skills</a>
+                        <a href="projects.html" class="nav">Projects</a>
+                        <a href="education.html" class="nav">Education</a>
+                        <a href="contact.html" class="nav">Contact</a>
+                        <i class="fa-solid fa-moon" id="theme-toggle"></i>
+                    </div>
+                  
+                </nav>
+            </div>
+            <div class="main">  
+                <div class="heading">
+                    <h1>PROJECTS</h1>
+                    <div class="line"></div>
+                    <p>Showcasing My Work</p>
+                </div>
+                <div class="top">
+                    <div class="left">
+                        <img src="career_recommendation.jpg" alt="career_project">
+                    </div>
+                    <div class="right">
+                        <h2>
+                            1.Career Recommendation System
+                        </h2>
+                        <h3>
+                            Final Year Project
+                        </h3>
+                        <p>
+                            Devoloped an integrated college portal that recommends suitable<br>
+                            post-B.Tech career paths based on students skills,interests<br>
+                            questionnaire responses and resume analysis.
+                            <br>
+                            <ul>
+                                <li>AI-powered career recommendation based on skills and interests</li>
+                                <li>Resume upload and analysis for personalized suggestions</li>
+                                <li>Interactive chatbot for student support</li>
+                                <li>doubt clarification</li> 
+                                <li>Text-to-image generation</li>
+                                <li>Academic announcements and examination management</li>
+                                <li>Company recommendations aligned with industry trends</li>   
+                            </ul>
+                         
+                        </p>
+                        <div class="tools">
+                            <div class="tech">HTML</div>
+                            <div class="tech">CSS</div>
+                            <div class="tech">JavaScript</div>
+                            <div class="tech">python</div>
+                            <div class="tech">Django</div>
+                            <div class="tech">MySQL</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="foot">
+                    <div id="scrollArrow" class="arrow">↓</div> 
+                </div>
+                <div class="bottom">
+                    <div class="bleft">
+                        <img src="labina_portfolio.png" alt="portfolio_project">
+                    </div>
+                    <div class="bright">
+                        <h2>
+                            Personal portfolio Website
+                        </h2>
+                        <h3>
+                            personal project
+                        </h3>
+                        <p>
+                            Designed and developed a responsive personal portfolio website<br>
+                            to showcase my skills,projects,education and contact information.
+                            <ul>
+                                <li>Responsive design for all devices</li>
+                                <li>Clean and modern UI</li>
+                                <li>Smooth animations and transitions</li>
+                                <li>Built using HTML,CSS and JavaScript</li>
+                            </ul>
+                        </p>
+                        <div class="btools">
+                            <div class="tech">HTML</div>
+                            <div class="tech">CSS</div>
+                            <div class="tech">JavaScript</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </body>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var arrow = document.getElementById('scrollArrow');
+        var lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        window.addEventListener('scroll', function() {
+          var currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+          if (currentScrollTop > lastScrollTop) {
+            // scrolling down
+            arrow.classList.add('hidden');
+          } else {
+            // scrolling up
+            arrow.classList.remove('hidden');
+          }
+
+          lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
+        });
+      });
+        const themeToggle=document.getElementById("theme-toggle");
+        themeToggle.addEventListener("click",function(){
+            document.body.classList.toggle("light-theme")
+        })
+    </script>
+
+</html>

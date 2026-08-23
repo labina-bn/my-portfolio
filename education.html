@@ -1,7 +1,9 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Education</title>
         <link rel="stylesheet" href="education.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     </head>
     <body>
         <div class="container">
@@ -18,7 +20,7 @@
                         <a href="projects.html" class="nav">Projects</a>
                         <a href="education.html" class="nav">Education</a>
                         <a href="contact.html" class="nav">Contact</a>
-                        <a href="#" class="nav">🌙</a>
+                        <i class="fa-solid fa-moon" id="theme-toggle"></i>
                     </div>
                 </nav>
             </div>
@@ -40,30 +42,46 @@
                         <img src="college project-amico.png" alt="college image">
                     </div>
                     <div class="edu_box">
-                        <h2 id="col_name">🎓  B.Tech in Information Technology<br>
-                        <div class="hline">
+                        <h2 id="col_name">B.Tech in Information Technology</h2>
+                        <div class="hline"></div>
+
+                        <div class="info-row">
+                            <span class="info-icon">🎓</span>
+                            <span class="info-label">College</span>
+                            <span class="info-separator">:</span>
+                            <span class="info-value">College of Engineering Vadakara</span>
                         </div>
-                        </h2>
-                        <div>🎓 </div>
-                        <div>College </div>
-                        <div>: </div>
-                        <div>College of Enginnering Vadakara</div>
-                        <div>🏫</div>
-                        <div>University</div>
-                        <div>:</div>
-                        <div>APJ Abdul Kalam Technological University (KTU)</div>
-                        <div>📆</div>
-                        <div>Duration</div>
-                        <div>:</div>
-                        <div>2022-2026</div>
-                        <div>📊</div>
-                        <div>CGPA</div>
-                        <div>:</div>
-                        <div>6.89</div>
+
+                        <div class="info-row">
+                            <span class="info-icon">🏫</span>
+                            <span class="info-label">University</span>
+                            <span class="info-separator">:</span>
+                            <span class="info-value">APJ Abdul Kalam Technological University (KTU)</span>
+                        </div>
+
+                        <div class="info-row">
+                            <span class="info-icon">📆</span>
+                            <span class="info-label">Duration</span>
+                            <span class="info-separator">:</span>
+                            <span class="info-value">2022-2026</span>
+                        </div>
+
+                        <div class="info-row">
+                            <span class="info-icon">📊</span>
+                            <span class="info-label">CGPA</span>
+                            <span class="info-separator">:</span>
+                            <span class="info-value">6.89</span>
+                        </div>
                     </div>
                 </div>
             </div>
         
         </div>
     </body>
+    <script>
+        const themeToggle=document.getElementById("theme-toggle");
+        themeToggle.addEventListener("click",function(){
+            document.body.classList.toggle("light-theme")
+        })
+    </script>
 </html>

@@ -1,5 +1,6 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>personal portfolio</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -20,7 +21,7 @@
                         <a href="projects.html" class="nav">Projects</a>
                         <a href="education.html" class="nav">Education</a>
                         <a href="contact.html" class="nav">Contact</a>
-                        <a href="#" class="nav">🌙</a>
+                        <i class="fa-solid fa-moon" id="theme-toggle"></i>
                     </div>
                   
                 </nav>
@@ -35,7 +36,7 @@
                      <h3> 
                         <span class="name1">Information</span> 
                          <span class="name2">Technology </span>
-                          <span class="name1">Student</span><br>
+                          <span class="name1">Graduate</span><br>
                          <span class="name1">Aspiring</span>
                          <span class="name2">Front-End Developer</span> 
                     </h3>
@@ -47,8 +48,12 @@
                      </p>
 
                      <div class="button">
-                        <button>View My Projects</button>
-                       <button>Download Resume</button>
+                        <div class="btns">
+                           <a href="projects.html" class="btnlink">View My Projects</a> 
+                        </div>
+                        <div class="btns">
+                           <a href="Labina_Resume (2).pdf" class="btnlink">Download Resume</a> 
+                        </div>
                      </div>
                 
                 </div>
@@ -81,9 +86,12 @@
                     <a href="about.html" class="arrow">⨠⨠</a>
                 </div>
             </section>
-
-   
-            
         </div>
     </body>
+    <script>
+        const themeToggle=document.getElementById("theme-toggle");
+        themeToggle.addEventListener("click",function(){
+            document.body.classList.toggle("light-theme")
+        })
+    </script>
 </html>

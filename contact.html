@@ -1,10 +1,12 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>contact me</title>
         <link rel="stylesheet" href="contact.css">
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     </head>
-    <div class="container">
+    <body>
+         <div class="container">
          <div class="header">
                 <nav class="navbar">
                     <div class="link1">
@@ -18,7 +20,7 @@
                         <a href="projects.html" class="nav">Projects</a>
                         <a href="education.html" class="nav">Education</a>
                         <a href="contact.html" class="nav">Contact</a>
-                        <a href="#" class="nav">🌙</a>
+                        <i class="fa-solid fa-moon" id="theme-toggle"></i>
                     </div>
                 </nav>
             </div>
@@ -41,7 +43,7 @@
                         <div class="right">
                             <div class="box">
                                 <h3>Send Me a Message</h3>
-                                <form action="#">
+                                <form id="submit-form">
                                  
                                     <input type="text" placeholder="Enter Your Name">
                                     <input type="email" placeholder="Enter Your Email">
@@ -80,4 +82,18 @@
                     
         </div>
     </div>
-</html>
+    </body>
+    <script>
+        const themeToggle=document.getElementById("theme-toggle");
+        themeToggle.addEventListener("click",function(){
+            document.body.classList.toggle("light-theme");
+        })
+        const submitForm=document.getElementById("submit-form");
+        submitForm.addEventListener("submit",function(event){
+            event.preventDefault();
+            alert("Thank you! Your message has been received.")
+            submitForm.reset();
+        })
+    </script>
+   
+</html>]
