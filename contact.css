@@ -59,7 +59,9 @@ align-items: center;
 }
 .main{
     display: grid;
-    grid-template-rows: 140px 1fr 100px;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    padding: 10px 20px 30px;
 }
 .heading{
     display: flex;
@@ -84,6 +86,7 @@ align-items: center;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
+    gap: 30px;
 }
 img{
     width:300px;
@@ -91,7 +94,9 @@ img{
 }
 .box{
     width: 500px;
-    height:300px;
+    min-height: 300px;
+    height:auto;
+    box-sizing: border-box;
     border-radius: 20px;
     background: radial-gradient(circle, rgb(6, 4, 79) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
     text-align: center;
@@ -239,6 +244,7 @@ button:hover{
     height:auto;
     margin: 10px;
     gap: 10px;
+    padding: 20px 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
